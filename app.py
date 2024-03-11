@@ -4,10 +4,9 @@ import random
 
 # Chama a API
 def gerar_imagem(estilo, cor, paleta, tipo):
-    chave = ''
     
     client = OpenAI(
-        organization='',
+        organization=organizacao,
         api_key=chave
     )
     
@@ -45,6 +44,8 @@ with st.container(height=350):
 #  Caixas de seleção
 st.divider()
 st.subheader('Escolha seu look!')
+organizacao = st.text_input("Digite a organização da API:")
+chave = st.text_input("Digite a chave da API:", type="password")
 estilo = st.selectbox("Selecione o estilo da roupa:", ['Elegante', 'Casual', 'Clássico', 'Romântico', 'Criativo','Qualquer'])
 cor = st.selectbox("Selecione a cor da roupa:", ['Vermelho', 'Azul', 'Verde', 'Amarelo', 'Rosa', 'Roxo', 'Marrom', 'Cinza', 'Preto', 'Branco', 'Qualquer'])
 paleta = st.selectbox("Selecione a paleta da roupa:", [ 'Inverno Profundo', 'Inverno Frio', 'Inverno Brilhante','Primavera Brilhante', 'Primavera Quente', 'Primavera Clara','Verão Claro', 'Verão Frio', 'Verão Suave', 'Outono Suave','Outono Quente', 'Outono Profundo', 'Qualquer' ])
