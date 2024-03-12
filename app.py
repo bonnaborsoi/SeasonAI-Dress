@@ -36,10 +36,10 @@ st.divider()
 st.subheader('Paletas de cores:')
 
 with st.container(height=350):
-    st.image('images\\winter.png', caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-    st.image('images\\spring.png', caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-    st.image('images\\summer.png', caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-    st.image('images\\autumn.png', caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+    st.image('images/winter.png', caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+    st.image('images/spring.png', caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+    st.image('images/summer.png', caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+    st.image('images/autumn.png', caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 #  Caixas de seleção
 st.divider()
